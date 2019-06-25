@@ -25,7 +25,8 @@ emoticons = YAML.load_file(yml_file) #setting the var that i created 'emoticons'
 new_hash  #returning created hash
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(yml_file, emoticon)
+  
   # code goes here
 end
 
