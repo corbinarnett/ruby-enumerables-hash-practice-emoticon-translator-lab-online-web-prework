@@ -11,8 +11,8 @@ emoticons = YAML.load_file(yml_file) #setting the var that i created 'emoticons'
     }
 
 emoticons.each do |key,value|
-new_hash['get_emoticon'][value[0]] = emoticons[key][1]
-new_hash['get_meaning'][value[1]] = key
+english = value[0]
+japanese = value[1]
 end
 
 new_hash  #returning created hash
