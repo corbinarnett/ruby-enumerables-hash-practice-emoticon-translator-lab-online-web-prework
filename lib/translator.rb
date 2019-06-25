@@ -17,8 +17,9 @@ emoticons = YAML.load_file(yml_file) #setting the var that i created 'emoticons'
   emoticons.each do |key,value|
     english = value[0]
     japanese = value[1]
-    new_hash["get_meaning"][japanese] = key #the keys inside the 'get_meaning' hash are the Japanese emoticons
-    new_hash["get_emoticon"][english] = japanese
+    new_hash["get_emoticon"][english] = japanese #the emoticon keys inside the 'get_emoticon' hash point to their Japanese equivalents
+    new_hash["get_meaning"][japanese] = key #the emoticon keys inside the 'get_meaning' hash point to their meanings..."☜(⌒▽⌒)☞" is = to angel
+
   end
 
 new_hash  #returning created hash
