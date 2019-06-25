@@ -30,7 +30,7 @@ def get_japanese_emoticon(yml_file, emoticon) #accepts two arguments, the YAML f
     if japanese_emoticon #if japanese_emoticon is found or "thruthy"
       return japanese_emoticon #return it
     else #if japanese_emoticon is not found or "falsy"
-      return "Hey there! We could not find your emoticon" #return this string
+      return "Sorry, we could not find your emoticon" #return this string
     end
 
 end
