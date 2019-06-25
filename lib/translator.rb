@@ -2,9 +2,10 @@
 require "yaml"
 
 def load_library(yml_file) #passing emoticons.yml as parameter. yml_file could be written as anything x, y, etc.
-emoticons = YAML.load_file(yml_file) #setting new var emoticons to equal loaded yaml file: emoticons.yml
+emoticons = YAML.load_file(yml_file) #setting the var that i created 'emoticons' to = the loaded emoticons.yml
 
     new_hash = {
+      #creating two keys to pass tests that point to inner hashes using =>
       'get_meaning' => {},
       'get_emoticon' => {}
     }
@@ -14,7 +15,7 @@ new_hash['get_emoticon'][value[0]] = emoticons[key][1]
 new_hash['get_meaning'][value[1]] = key
 end
 
-new_hash
+new_hash  #returning creating hash
 end
 
 def get_japanese_emoticon
