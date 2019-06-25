@@ -10,7 +10,7 @@ emoticons = YAML.load_file(yml_file) #setting the var that i created 'emoticons'
       'get_emoticon' => {} #english emoticons "O:)"
     }
 
-    
+
 #angel: KEY
 #  - "O:)"      VALUE[0]
 #  - "☜(⌒▽⌒)☞"  VALUE[1]
