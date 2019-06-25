@@ -35,6 +35,7 @@ def get_japanese_emoticon(yml_file, emoticon) #accepts two arguments, the YAML f
 
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(yml_file, emoticon)
+  english_meaning = load_library(yml_file)['get_meaning'][emoticon]
+  
 end
