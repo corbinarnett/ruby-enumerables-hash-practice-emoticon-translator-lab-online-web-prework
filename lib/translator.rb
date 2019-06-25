@@ -26,7 +26,7 @@ new_hash  #returning created hash
 end
 
 def get_japanese_emoticon(yml_file, emoticon) #accepts two arguments, the YAML file path and the emoticon
-  japanese_emoticon = YAML.load_file(yml_file)
+  japanese_emoticon = load_library(yml_file)['get_emoticon'][emoticon] #calls on #load_library and gives it the argument of the file pat
   # code goes here
 end
 
