@@ -6,8 +6,8 @@ emoticons = YAML.load_file(yml_file) #setting the var that i created 'emoticons'
 
     new_hash = {
       #creating two keys to pass tests ('get_meaning' and 'get_emoticon') that point to inner hashes using =>
-      'get_meaning' => {},
-      'get_emoticon' => {}
+      'get_meaning' => {}, #japanese emoticons
+      'get_emoticon' => {} ""
     }
 
 emoticons.each do |key,value|
