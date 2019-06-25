@@ -5,7 +5,7 @@ def load_library(yml_file) #passing emoticons.yml as parameter. yml_file could b
 emoticons = YAML.load_file(yml_file) #setting the var that i created 'emoticons' to = the loaded emoticons.yml
 
     new_hash = {
-      #creating two keys to pass tests that point to inner hashes using =>
+      #creating two keys to pass tests ('get_meaning' and 'get_emoticon') that point to inner hashes using =>
       'get_meaning' => {},
       'get_emoticon' => {}
     }
